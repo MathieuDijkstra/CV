@@ -1,0 +1,185 @@
+<!--
+    <!DOCTYPE html>  
+    laat de browser weten wat voor een document 
+    hij verwachten hier dus een html document 
+    dit noemt men ook het root element
+    hier zeg je dat je de laaste versie van html hebt html5
+    (tip kijk html boilerplate op youtube)
+    https://www.youtube.com/watch?v=1cpdzG2WU0Q
+-->
+<!DOCTYPE html>
+<!-- 
+<html lang="nl">    
+ -->
+<html lang="nl">
+
+<head>
+    <!-- 
+    <meta charset="UTF-8">
+    geeft de browser extra data zo dat
+    deze pagina is gecodeerd met UTF-8 carakter set 
+    dit is een lijst waar alle karakters in staan die je kunt
+    je kunt het beste is het utf-8 gebruiken
+    dit is de standaard encoding hier staan 
+    alle internationale codes in verschillende tekens zo als latijsnse carakters etz.
+    https://www.w3schools.com/charsets/ref_html_utf8.asp
+ -->
+    <meta charset="UTF-8">
+    <!--
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     zegt tegen internet explorder dat hij de laaste versie 
+     van de internet explorder moet gebruiken dit is edge. 
+-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 
+       <meta name="description" content="inlever opdracht voor nti web design">
+       is voor zoek machines die dan informatie geven over de inhoud van je website
+ -->
+    <meta name="description" content="inlever opdracht voor nti web design">
+    <!--
+    <meta name="keywords" content="HTML, CSS">
+    
+-->
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Mathieu Dijkstra">
+    <!-- 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    zorgt er voor dat de browser niet alles (srinkingkt)
+    kleiner maakt als je de site op telefoon of tablet
+    en er voor zocht dat de responsive css en 
+    media queries werken.
+    laat je deze regel weg dan shrinkt hij alles en
+    dan doet de responsive het niet!!!
+    zie ook
+    https://www.youtube.com/watch?v=SElOdK2qTpI
+-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+    <title>&copy; &#128293; Mathieu Persoonlijke pagina &#129669;  student nr: 995429090 &#128293;&copy;</title>
+    hier staat de titel met nog een paar grappige utf-8 codes voor copyright smily en vuur
+-->
+    <title>&copy; &#128293; Mathieu Persoonlijke pagina &#129669; student nr: 995429090 &#128293;&copy;</title>
+    <!-- 
+    <link rel="icon" href="images/favicon.svg" sizes="any" type="image/svg+xml">
+    dit is het icontje die je krijgt in svg formaat (short for scalable vector graphic file)
+ -->
+    <link rel="icon" href="images/favicon.svg" sizes="100%" type="image/svg+xml">
+</head>
+
+<body>
+    <!--    
+    met <table></table> maak je een tabel 
+    cellspacing="5%" is een atribute van cel spacing dit kun je google op mdn dus mdn tabel [zoek], 
+    met dit atribute zorgt je er voor dat je meer ruimte krijgt tussen de tabellen. 
+    https://developer.mozilla.org/en-US/docs/Web/HTML/Element/table
+-->
+    <table cellspacing="5%">
+        <tr>
+            <td>
+                <!-- 
+                    met het     
+                    <img src="images/mtd.jpg" alt="foto van Mathieu Dijkstra"> element 
+                    kun je fotos op het scherm zetten de alt="foto van Mathieu Dijkstra" staat voor alternative text
+                    het is belangrijk om dit in te vullen omdat google hier mee indexeert waar je pagina over gaat en je hierdoor
+                    een hogere zoek vindbaarheid krijgt. tevens voor slecht ziende of readers geeft het meer informatie waar ze naar kijken
+                    via text to speach (windowskey + ctrl + enter)
+                -->
+                <img src="images/mtd.jpg" alt="foto van Mathieu Dijkstra">
+            </td>
+            <td>
+                <!-- 
+                    <h1></h1>
+                    <h2></h2>
+                    <h3></h3>
+                    <h4></h4>
+                    <h5></h5>
+                    <h6></h6>
+                    zijn de kop van pagina met h1 als grootste en h6 als kleinste!
+                    LET OP VEEL MENSEN GEBRUIKEN DEZE H ELEMENTEN VOOR OPMAAK MAAR DAAR ZIJN ZE EIGENLIJK NIET VOOR BEDOELD
+                    ZIE FILM YOUTUBE: The most common HTML mistake that I see
+                    https://www.youtube.com/watch?v=NexL5_Vdoq8
+                -->
+                <h1>Mathieu Dijkstra</h1>
+            </td>
+        </tr>
+    </table>
+    <!-- 
+    <hrt>maakt een horizontale streep over het scherm
+-->
+    <hr>
+    <!-- 
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+    <h4></h4>
+    <h5></h5>
+    <h6></h6>
+    zijn de kop van pagina met h1 als grootste en h6 als kleinste!
+    LET OP VEEL MENSEN GEBRUIKEN DEZE H ELEMENTEN VOOR OPMAAK MAAR DAAR ZIJN ZE EIGENLIJK NIET VOOR BEDOELD
+    ZIE FILM YOUTUBE: The most common HTML mistake that I see
+    https://www.youtube.com/watch?v=NexL5_Vdoq8
+ -->
+    <h1>een tabel maken voorbeeld</h1>
+    <!--    
+    met <table></table> maak je een tabel 
+-->
+    <table>
+        <!-- 
+      <thead></thead> tussen deze elementen zet je met       
+      met <tr> </tr> (TableRow)maak je een tabel regel aan waar in de
+      <th></th>(TableHeading) de kop van de tabel automatisch vet gedrukt!!!
+-->
+        <thead>
+            <tr>
+                <th>Datum</th>
+                <th>Cursusen gevolgd</th>
+                <th>waardering</th>
+            </tr>
+        </thead>
+        <!--  
+        tussen <tbody></tbody> staat tabel wat je invult met de elementen voor opmaak zoals:
+        met <tr> </tr> (TableRow)maak je een tabel regel aan waar in de
+        <td></td> (TableData) tabel data de inhoud van elke cel in de rij komen.!!!
+-->
+        <tbody>
+            <tr>
+                <td>2022</td>
+                <td><a target="_blank" href="https://www.nti.nl/beroepsopleidingen/ict-opleidingen/vakopleiding-webdesigner/">html css cursus NTI</a></td>
+                <td>&#127775;&#127775;&#127775;</td>
+            </tr>
+            <tr>
+                <td>2022</td>
+                <td><a target="_blank" href="https://www.udemy.com/course/the-complete-web-development-bootcamp/?src=sac&kw=the+complete+web">  Udemy The Complete 2022 Web Development Bootcamp Angela Hu</a> </td>
+                <td>&#127775;&#127775;&#127775;&#127775;</td>
+            </tr>
+        </tbody>
+        <!-- 
+        tussen het <tfoot></tfoot> element staat de voet van de tabel 
+-->
+        <tfoot>
+
+        </tfoot>
+    </table>
+<hr>
+<table>
+    <thead>
+        <tr>
+            <th>Skils</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Web devolpmet</td>
+            <td>&#127775;&#127775;&#127775;&#127775;</td>
+        </tr>
+    </tbody>
+</table>
+
+</body>
+<hr>
+<footer>
+    <a href="contactme.html">Contackt</a>
+   <p>©2022 M.T. Dijkstra</p>
+</footer>
+</html>
